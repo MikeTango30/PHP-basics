@@ -8,10 +8,16 @@
 
 namespace Nfq\Akademija\Strict;
 
-function calculateHomeWorkSum(): int
+use \TypeError;
+
+function calculateHomeWorkSum(...$numbers): int
+{
+    return calculateNumbersSum(...$numbers);
+}
+
+function calculateNumbersSum(int...$numbers): int
 {
     $numbers = func_get_args();
-    $sum = array_sum($numbers);
 
-    return $sum;
+    return $sum = array_sum($numbers);
 }

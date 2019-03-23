@@ -6,9 +6,9 @@
  * Time: 13.57
  */
 
-namespace
+namespace Nfq
 {
-    function calculateHomeWorkSum()
+    function calculateHomeWorkSum(...$numbers)
         {
             $numbers = func_get_args();
             $sum = array_sum($numbers);
@@ -20,7 +20,7 @@ namespace
 
 namespace Nfq\Akademija\Not_Typed
 {
-    function calculateHomeWorkSum(): int
+    function calculateHomeWorkSum(...$numbers): int
     {
         $numbers = func_get_args();
         $sum = array_sum($numbers);
@@ -31,7 +31,7 @@ namespace Nfq\Akademija\Not_Typed
 
 namespace Nfq\Akademija\Soft
 {
-    function calculateHomeWorkSum(): int
+    function calculateHomeWorkSum(int...$numbers): int
     {
         $numbers = func_get_args();
         $sum = array_sum($numbers);
