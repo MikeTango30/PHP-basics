@@ -8,8 +8,6 @@
 
 namespace Nfq\Akademija\Strict;
 
-use \TypeError;
-
 function calculateHomeWorkSum(...$numbers): int
 {
     return calculateNumbersSum(...$numbers);
